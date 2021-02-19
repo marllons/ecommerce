@@ -1,0 +1,14 @@
+CREATE TABLE `ecommerce`.`login_details` ( `india_id` INT NOT NULL AUTO_INCREMENT , `username` VARCHAR(15) NOT NULL , `password` VARCHAR(15) NOT NULL , `admin` VARCHAR(15) NOT NULL , PRIMARY KEY (`india_id`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `ecommerce`.`books` ( `books_id` INT NOT NULL AUTO_INCREMENT , `book_name` VARCHAR(45) NOT NULL , `author_name` VARCHAR(45) NOT NULL , `book_description` VARCHAR(455) NOT NULL , `book_price` VARCHAR(25) NOT NULL , PRIMARY KEY (`books_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `ecommerce`.`electronics` ( `electronics_id` INT NOT NULL AUTO_INCREMENT , `brand_name` VARCHAR(45) NOT NULL , `store_name` VARCHAR(45) NOT NULL , `brand_description` VARCHAR(455) NOT NULL , `brand_price` VARCHAR(45) NOT NULL , PRIMARY KEY (`eletronics_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `ecommerce`.`icecream` ( `icecream_id` INT NOT NULL AUTO_INCREMENT , `icecream_name` VARCHAR(45) NOT NULL , `store_name` VARCHAR(45) NOT NULL , `icecream_description` VARCHAR(455) NOT NULL , `icecream_price` VARCHAR(45) NOT NULL , PRIMARY KEY (`icecream_id`)) ENGINE = InnoDB;
+
+INSERT INTO `login_details` (`india_id`, `username`, `password`, `admin`) VALUES (NULL, 'admin', 'admin', 'admin')
+
+INSERT INTO `login_details` (`india_id`, `username`, `password`, `admin`) VALUES (NULL, 'user', 'user', 'user')
+
+
